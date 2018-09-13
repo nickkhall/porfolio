@@ -8,6 +8,7 @@ import {
 
 // Components
 import Main from 'components/Main';
+import RouteMiddleware from 'components/RouteMiddleware';
 
 // Routes config
 import ROUTES_CONFIG from 'routes';
