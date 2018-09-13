@@ -15,18 +15,16 @@ import ROUTES_CONFIG from 'routes';
 
 const RouteManager = () => (
   <HashRouter>
-    <div>
-      <Main>
-        <Switch>
-          { ROUTES_CONFIG.map(routeProps => (
-            <RouteMiddleware
-              key={routeProps.path || '404'}
-              {...routeProps}
-            />
-          ))}
-        </Switch>
-      </Main>
-    </div>
+    <Main>
+      <Switch>
+        { ROUTES_CONFIG.map(routeProps => (
+          <RouteMiddleware
+            key={routeProps.path || '404'}
+            {...routeProps}
+          />
+        ))}
+      </Switch>
+    </Main>
   </HashRouter>
 );
 
