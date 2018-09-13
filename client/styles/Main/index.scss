@@ -1,6 +1,8 @@
 // Main styles
 .main-body {
-  background: $background;
+  background-color: $background;
+  background-image: url('../static/imgs/binary.png');
   color: $main-text-color;
+  padding: 50px;
   width: 100%;
 }
