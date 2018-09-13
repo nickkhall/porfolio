@@ -1,0 +1,12 @@
+// Navigation styles
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  .navigation-item {
+    list-style: none;
+    &:not(:first-of-type) {
+      margin: 10px 0;
+    }
+  }
+}
