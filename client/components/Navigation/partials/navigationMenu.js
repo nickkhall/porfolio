@@ -31,18 +31,18 @@ class NavigationMenu extends React.Component {
 
   render() {
     const { menuItems, menuOpen } = this.state;
-    const menuItemClassName = menuOpen ? 'active' : 'navigation-item';
+    const menuItemClassName = menuOpen ? 'active' : '';
 
     return (
-      <ul className="navigation-menu">
-        <span
-          role="presentation"
-          className="dropdown-arrow"
-          onClick={this.openMenu}
-        />
+      <ul
+        className="navigation-menu"
+        role="presentation"
+        onClick={this.openMenu}
+      >
+        <span className="dropdown-arrow" />
         {
           menuItems.map(item => (
-            <li key={item.label} className={menuItemClassName}>
+            <li key={item.label} className={`navigation-item ${menuItemClassName}`}>
               <h2 className="title">{ item.label }</h2>
             </li>
           ))

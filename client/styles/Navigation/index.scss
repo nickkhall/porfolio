@@ -5,13 +5,17 @@
   justify-content: space-between;
   padding: 10px 20px;
   .navigation-menu {
+    align-items: flex-end;
+    border: 2px solid $darkGrey;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    padding: 10px;
     min-width: 10%;
     .dropdown-arrow {
       border-right: 3px solid $white;
       border-bottom: 3px solid $white;
       display: block;
+      margin-bottom: 5px;
       padding: 5px;
       transform: rotate(45deg);
       height: 0.25vh;
@@ -20,9 +24,7 @@
     .navigation-item {
       display: none;
       list-style: none;
-      &:not(:first-of-type), {
-        margin-top: 10px;
-      }
+      width: 100%;
       &:not(:last-of-type) {
         margin-bottom: 10px;
       }
