@@ -1,7 +1,7 @@
 import React from 'react';
 
-const CommonSection = ({ children }) => (
-  <div className="common-section">
+const CommonSection = ({ children, className = '' }) => (
+  <div className={`common-section ${className}`}>
     { children }
   </div>
 );

@@ -4,8 +4,14 @@ import React from 'react';
 import CommonSection from 'components/Common/CommonSection';
 
 const Hero = () => (
-  <CommonSection>
-    <h1>Hero</h1>
+  <CommonSection className="hero">
+    <h2 className="title">Passion</h2>
+    <img
+      className="hero-image"
+      title="Server Room"
+      alt="Server Room"
+      src="../client/static/imgs/main-servers.png"
+    />
   </CommonSection>
 );
 
