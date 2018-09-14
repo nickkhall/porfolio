@@ -3,6 +3,8 @@
   background-color: $background;
   background-image: url('../static/imgs/binary.png');
   color: $main-text-color;
+  display: flex;
+  flex-direction: column;
   padding: 50px;
   width: 100%;
 }

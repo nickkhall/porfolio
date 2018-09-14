@@ -1,16 +1,15 @@
 // Navigation styles
 .navigation {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
+  min-width: 10%;
+  position: relative;
   .navigation-menu {
     align-items: flex-end;
     border: 2px solid $darkGrey;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    min-width: 10%;
+    position: absolute;
+    width: 100%;
     .dropdown-arrow {
       border-right: 3px solid $white;
       border-bottom: 3px solid $white;
@@ -22,15 +21,22 @@
       width: 0.25vw;
 		}
     .navigation-item {
+      border-radius: 1px;
       display: none;
       list-style: none;
+      padding: 5px;
       width: 100%;
       &:not(:last-of-type) {
-        margin-bottom: 10px;
+        margin: 5px 0;
       }
       &.active {
         display: block;
 			}
+      &:hover {
+        background: $lightGrey;
+        cursor: pointer;
+      }
+      &:last-of-type { margin-top: 5px; }
 		}
 	}
 }
