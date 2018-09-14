@@ -7,8 +7,8 @@ import Hero from './partials/hero';
 const Home = () => (
   <div className="page home">
     <header>
-      <Navigation />
       <h1>Logo</h1>
+      <Navigation />
     </header>
 
     <Hero />

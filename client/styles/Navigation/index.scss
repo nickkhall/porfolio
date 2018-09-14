@@ -1,13 +1,15 @@
 // Navigation styles
 .navigation {
   min-width: 10%;
-  position: relative;
+  position: absolute;
+  right: 1%;
+  top: 25%;
   .navigation-menu {
     align-items: flex-end;
-    border: 2px solid $darkGrey;
+    background: $background;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px 10px;
     position: absolute;
     width: 100%;
     .dropdown-arrow {
