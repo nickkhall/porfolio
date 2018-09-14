@@ -10,7 +10,7 @@ const Hero = () => (
       className="hero-image"
       title="Server Room"
       alt="Server Room"
-      src="../client/static/imgs/main-servers.png"
+      src="/client/static/imgs/main-servers.png"
     />
   </CommonSection>
 );

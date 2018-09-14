@@ -1,5 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 /**
@@ -46,15 +47,10 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 });
 
-const CopyWebpackPluginConfigOptions = [{
-  from: 'client/static',
-  to: 'static/'
-}];
-
-CopyWebpackPluginConfigOptions.push({
-  from: 'config.json',
-  to: 'cfg/app'
-});
+const CopyWebpackPluginConfig = new CopyWebpackPlugin([{
+  from: path.join(APP_DIR, 'static'),
+  to: 'client/static/'
+}]);
 
 const developmentPlugin = new webpack.DefinePlugin({
   'process.env': {
@@ -113,6 +109,7 @@ const developmentConfig = {
   },
   plugins: [
     HtmlWebpackPluginConfig,
+    CopyWebpackPluginConfig,
     developmentPlugin
   ]
 };
