@@ -1,1 +1,11 @@
 // Home Styles
+.home {
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: 10px;
+    position: relative;
+  }
+}
