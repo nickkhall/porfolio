@@ -1,44 +1,12 @@
 // Navigation styles
 .navigation {
-  min-width: 10%;
-  position: absolute;
-  right: 1%;
-  top: 25%;
-  .navigation-menu {
-    align-items: flex-end;
-    background: $background;
-    display: flex;
-    flex-direction: column;
-    padding: 5px 10px;
-    position: absolute;
-    width: 100%;
-    .dropdown-arrow {
-      border-right: 3px solid $white;
-      border-bottom: 3px solid $white;
-      display: block;
-      margin-bottom: 5px;
-      padding: 5px;
-      transform: rotate(45deg);
-      height: 0.25vh;
-      width: 0.25vw;
-		}
-    .navigation-item {
-      border-radius: 1px;
-      display: none;
-      list-style: none;
-      padding: 5px;
-      width: 100%;
-      &:not(:last-of-type) {
-        margin: 5px 0;
-      }
-      &.active {
-        display: block;
-			}
-      &:hover {
-        background: $lightGrey;
-        cursor: pointer;
-      }
-      &:last-of-type { margin-top: 5px; }
-		}
-	}
+  background: $darkGrey;
+  padding: 20px;
+  min-width: 150px;
+  .navigation-item {
+    list-style: none;
+    text-transform: uppercase;
+    margin: 10px 0;
+    &:hover { cursor: pointer; }
+  }
 }

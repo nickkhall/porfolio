@@ -4,7 +4,8 @@
   background-image: url('../static/imgs/binary.png');
   color: $main-text-color;
   display: flex;
-  flex-direction: column;
-  padding: 50px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
   width: 100%;
 }

@@ -8,6 +8,7 @@ import {
 
 // Components
 import Main from 'components/Main';
+import Navigation from 'components/Navigation';
 import RouteMiddleware from 'components/RouteMiddleware';
 
 // Routes config
@@ -16,6 +17,7 @@ import ROUTES_CONFIG from 'routes';
 const RouteManager = () => (
   <HashRouter>
     <Main>
+      <Navigation />
       <Switch>
         { ROUTES_CONFIG.map(routeProps => (
           <RouteMiddleware

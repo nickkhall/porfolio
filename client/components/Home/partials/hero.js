@@ -5,13 +5,15 @@ import CommonSection from 'components/Common/CommonSection';
 
 const Hero = () => (
   <CommonSection className="hero">
-    <h2 className="title">Passion</h2>
-    <img
-      className="hero-image"
-      title="Server Room"
-      alt="Server Room"
-      src="/client/static/imgs/main-servers.png"
-    />
+    <h1 className="title">תשוקה</h1>
+    <p className="info">
+      As a developer, my goal has always been to
+      produce the most culminating code possible. I&apos;ve
+      always strived to follow best practices and standards in
+      everything I work on. Programming started out as a hobby,
+      and turned into a passion fairly quickly. I quickly advanced
+      passed that to dive into the realm of computer science as a whole.
+    </p>
   </CommonSection>
 );
 
